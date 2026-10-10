@@ -50,13 +50,20 @@ p.lead{max-width:880px;margin:0 auto; color:var(--muted); font-size:18px; line-h
 .footer .brandline{display:flex;align-items:center;gap:14px}
 @media(max-width:800px){.footer .cols{grid-template-columns:1fr}}
 .small{font-size:14px;color:var(--muted)}
+.logo-h{display:block;height:40px;width:auto}
+.logo-i{display:none;height:40px;width:auto}
+.logo-s{display:block;height:64px;width:auto}
+.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+@media(max-width:600px){.logo-h{display:none}.logo-i{display:block}}
 </style>
 </head>
 <body>
 <header class="header">
   <div class="container nav">
     <a class="brand" href="#/home" aria-label="Abaard House Home">
-      <span class="name">ABAARD HOUSE</span>
+      <img class="logo-h" src="assets/AbaardHouse-logo-horizontal-gold.svg" alt="Abaard House" width="104" height="40"/>
+      <img class="logo-i" src="assets/AbaardHouse-logo-icon-gold.svg" alt="" width="40" height="41" aria-hidden="true"/>
+      <span class="sr-only">ABAARD HOUSE</span>
     </a>
     <nav class="links" aria-label="Main">
       <a href="#/about">About</a>
@@ -116,7 +123,7 @@ p.lead{max-width:880px;margin:0 auto; color:var(--muted); font-size:18px; line-h
 <footer class="footer">
   <div class="container cols">
     <div>
-      <div class="brandline"><strong>ABAARD HOUSE</strong></div>
+      <div class="brandline"><img class="logo-s" src="assets/AbaardHouse-logo-stacked-gold.svg" alt="Abaard House" width="110" height="71"/><strong>ABAARD HOUSE</strong></div>
       <p class="small">© 2025 Abaard House Inc. All rights reserved.</p>
     </div>
     <div>
